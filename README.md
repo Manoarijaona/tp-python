@@ -6,3 +6,4 @@ Mini projet python "Nombre mystère"
 -Demander à l'utilisateur de trouver le nombre 
 -Dire si le nombre mystère est supérieur ou inférieur à l'input
 -Input de l'utilisateur doit être en INT -> Vérifier
+-Ajout de niveau
