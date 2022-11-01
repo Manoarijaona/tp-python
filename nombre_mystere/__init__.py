@@ -1,20 +1,20 @@
 import random
 
-nombre_mystere = random.randint(1, 100)
-nombre_initiale = 0
+mystery_number = random.randint(1, 100)
+initial_number = 0
 score = 10
-while nombre_mystere != nombre_initiale:
-    nombre_utilisateur = int(input("Entrez un nombre entre 1 et 100: "))
-    if nombre_mystere > nombre_utilisateur:
-        print(f"Le nombre mystère est supérieur à {nombre_utilisateur}")
-        nombre_initiale = nombre_utilisateur
+while mystery_number != initial_number:
+    input_number = int(input("Entrez un nombre entre 1 et 100: "))
+    if mystery_number > input_number:
+        print(f"Le nombre mystère est supérieur à {input_number}")
+        initial_number = input_number
         score -= 1
-    elif nombre_mystere < nombre_utilisateur:
-        print(f"Le nombre mystère est inférieur à {nombre_utilisateur}")
-        nombre_initiale = nombre_utilisateur
+    elif mystery_number < input_number:
+        print(f"Le nombre mystère est inférieur à {input_number}")
+        initial_number = input_number
         score -= 1
     else:
-        if nombre_mystere == nombre_utilisateur:
+        if mystery_number == input_number:
             break
 
 print("Bravo, vous avez trouvé le nombre mystère!!")
